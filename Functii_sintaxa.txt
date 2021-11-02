@@ -1,0 +1,30 @@
+--Direct--
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println(compute(1));
+	}
+	public static String compute(int number){
+	    if(number == 1) {
+	        return "Bzz";
+	    }
+	    return "Not Bzz";
+	}
+}
+
+--Indirect--
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String result = compute(100);
+	    System.out.println(result);
+	}
+	public static String compute(int number){
+	    if(number == 1) {
+	        return "Bzz";
+	    }
+	    return "Not Bzz";
+	}
+}
