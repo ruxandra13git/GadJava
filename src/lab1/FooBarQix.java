@@ -11,16 +11,20 @@ public class FooBarQix {
     }
 
     public static String compute(int number) {
+        boolean condition = false;
         String result = "";
 
         if (number % 3 == 0) {
             result += "Foo";
+            condition = true;
         }
         if (number % 5 == 0) {
             result += "Bar";
+            condition = true;
         }
         if (number % 7 == 0) {
             result += "Qix";
+            condition = true;
         }
 
         String s_number = String.valueOf(number);
@@ -42,13 +46,21 @@ public class FooBarQix {
         }
         for (int i = 0; i < counter3; i++) {
             result += "Foo";
+            condition = true;
         }
         for (int i = 0; i < counter5; i++) {
             result += "Bar";
+            condition = true;
         }
         for (int j = 0; j < counter7; j++) {
             result += "Qix";
+            condition = true;
         }
-        return result;
+        if(condition == true) {
+            return result;
+        }
+        else {
+            return s_number;
+        }
     }
 }
