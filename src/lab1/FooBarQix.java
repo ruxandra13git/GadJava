@@ -32,22 +32,22 @@ public class FooBarQix {
         for (int i = 0; i < s_number.length(); i++) {
             if(s_number.charAt(i) == '3') {
                 counter3++;
-                for (int j = 0; j < counter3; j++) {
-                    result += "Foo";
-                }
             }
             if(s_number.charAt(i) == '5') {
                 counter5++;
-                for (int j = 0; j < counter5; j++) {
-                    result += "Bar";
-                }
             }
             if(s_number.charAt(i) == '7') {
                 counter7++;
-                for (int j = 0; j < counter7; j++) {
-                    result += "Qix";
-                }
             }
+        }
+        for (int i = 0; i < counter3; i++) {
+            result += "Foo";
+        }
+        for (int i = 0; i < counter5; i++) {
+            result += "Bar";
+        }
+        for (int j = 0; j < counter7; j++) {
+            result += "Qix";
         }
         return result;
     }
