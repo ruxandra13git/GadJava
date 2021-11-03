@@ -56,6 +56,7 @@ public class FooBarQix {
             result += "Qix";
             condition = true;
         }
+
         if(condition == true) {
             return result;
         }
