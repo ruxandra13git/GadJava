@@ -1,4 +1,5 @@
 package lab1;
+
 import java.util.Scanner;
 
 public class FooBarQix {
@@ -12,13 +13,13 @@ public class FooBarQix {
     public static String compute(int number) {
         String result = "";
 
-        if(number % 3 == 0) {
+        if (number % 3 == 0) {
             result += "Foo";
         }
-        if(number % 5 == 0) {
+        if (number % 5 == 0) {
             result += "Bar";
         }
-        if(number % 7 == 0) {
+        if (number % 7 == 0) {
             result += "Qix";
         }
 
@@ -28,24 +29,27 @@ public class FooBarQix {
         int counter5 = 0;
         int counter7 = 0;
 
-        for(int i = 0; i < s_number.length(); i++) {
-            if(s_number.charAt(i) == '3') {
+        for (int i = 0; i < s_number.length(); i++) {
+            if (s_number.charAt(i) == '3') {
                 counter3++;
-                for(int j = 0; j < counter3; j++) {
+                for (int j = 0; j < counter3; j++) {
                     result += "Foo";
                 }
             }
-            if(s_number.charAt(i) == '5') {
+            if (s_number.charAt(i) == '5') {
                 counter5++;
-                for(int j = 0; j < counter5; j++) {
+                for (int j = 0; j < counter5; j++) {
                     result += "Bar";
                 }
             }
-            if(s_number.charAt(i) == '7') {
+            if (s_number.charAt(i) == '7') {
                 counter7++;
-                for(int j = 0; j < counter7; j++) {
+                for (int j = 0; j < counter7; j++) {
                     result += "Qix";
                 }
+            }
+            else {
+                result = s_number;
             }
         }
         return result;
